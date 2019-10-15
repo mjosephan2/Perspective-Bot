@@ -18,6 +18,7 @@ from matplotlib import pyplot as plt
 import numpy.matlib
 import sys
 import json
+import mxnet as mx
 
 twit_text=[]
 twit_loc=[]
@@ -72,7 +73,8 @@ df["location"]=twit_loc
 df["id"]=twit_id
 
 class bert_instance():
-    bert_embedding = BertEmbedding()
+    ctx = mx.gpu(0)
+    bert = BertEmbedding(ctx=ctx)
               
     def return_top(self,processed_texts,enquiry):
         all_vectors=[]
