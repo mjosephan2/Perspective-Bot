@@ -1,3 +1,8 @@
+def warn(*args, **kwargs):
+    pass
+import warnings
+warnings.warn = warn
+
 from TwitterSearch import *
 
 import googlemaps
@@ -33,15 +38,14 @@ try:
     tso = TwitterSearchOrder() # create a TwitterSearchOrder object
     tso.set_keywords(keywords) # let's define all words we would like to have a look for
     tso.set_language('en') # we want to see German tweets only
-    tso.set_include_entities(False) # and don't give us all those entity informatio
+    tso.set_include_entities(False) # and don't gie us all those entity informatio
 
     # it's about time to create a TwitterSearch object with our secret tokens
     ts = TwitterSearch(
-        consumer_key = 'BpUamvs18gYi60bP5F7MBibGS',
-        consumer_secret = 'DascJMIMY6gZ2ImnJia9gGow1tgqrOhDqEsealLUorJjrBKEHb',
-        access_token = '1182649652581036032-a1C9iYIh6KyRVdBPTmB0qea85XrHjd',
-        access_token_secret = 'UN8K14r5SEHiaWzDq5osZja9W4mIP2sNRGNSJWBMGX7xY')
-
+        consumer_key = 'o7Lk8ooAVUqc9erAcuyIAbS9K',
+        consumer_secret = 'OTQ4HjnXADtFa0W8WLFiqSimSUOiHuCvukcmaSnadEZYWYnRdL',
+        access_token = '126936259-Pwcpo6UMhvnSmbtrHgXEdSIctrbgj9aQZJi8Wzhv',
+        access_token_secret = 'Ga8smMYFZUSAFWQqMv0PYdOfeCj9hbY1tDS0zbvtq9Ihj')
      # this is where the fun actually starts :)
     for tweet in ts.search_tweets_iterable(tso):
         #print( '@%s tweeted: %s' % ( tweet['user']['screen_name'], tweet['text'] ) )

@@ -1,13 +1,12 @@
-# :eyes: Perspective Bot
+# Perspective Bot
 > Are we even aware of our biases anymore? It needs to be changed.
 > If you look at this chart and are convinced your “extreme” source belongs in the middle, you just might be part of the problem.
 
-![News Bias](news_bias.jpg)
-
+![News Bias](http://52.246.249.29:3030/public/news_bias.jpg)
 
 **Perspective Bot** is a **Chrome Extension** where we can search for the news we see on the internet and get more context about it. Using Machine Learning algorithms like BERT (Bidirectional Encoder Representations from Transformers) and clustering, the bot can show **different perspectives about the news** with the most hits by pulling tweets from the last one week using the Twitter API. 
 
-![Perspective Bot](perspectivebot.png)
+![Perspective Bot](http://52.246.249.29:3030/public/perspectivebot.png)
 
 ### Problem Statement
 * Many sources people consider to be ‘news sources’or 'forums' are actually dominated by analysis and opinion pieces. It is hard for people to determine news as 'news' or 'opinions'.  
@@ -21,12 +20,13 @@ Our team built a pipeline based on the state-of-the-art BERT model with Twitter 
 * The results obtained are **grouped by country** (obtained from **Google Maps API**), and shown on a website built using **BootStrap** where the user can gather more **context and perspective** as well as do further research and reading of the same. 
 
 ### Screenshots
-Lorem Ipsum
+![Click](http://52.246.249.29:3030/public/screen3.jpg)
+![Webpage](http://52.246.249.29:3030/public/screen4.png)
 
 ### Installation
-1. Download Google Chrome Extention from [here](https://github.com).
+1. Download Google Chrome Extention from [here](https://github.com/slimechips/intuition/tree/master/chrome_ext).
 2. In the Chrome Address Bar, type `chrome://extensions/` and Toggle `Developer Mode` to ON (top-right pane)
-3. Using the `Load unpacked` button, select the folder downloaded in Step 1 to load the app in Chrome and enable the extention.
+3. Using the `Load unpacked` button, select the folder downloaded in Step 1 to load the app in Chrome and enable the extension.
 
 ### Team
 1. [Rahul Bhattacharjee](https://github.com/rahulbhatta)
