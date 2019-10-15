@@ -2,11 +2,11 @@
 > Are we even aware of our biases anymore? It needs to be changed.
 > If you look at this chart and are convinced your “extreme” source belongs in the middle, you just might be part of the problem.
 
-![News Bias](http://52.246.249.29:3030/public/news_bias.jpg)
+![News Bias](https://github.com/mjosephan2/Perspective-Bot/blob/master/images/news_bias.jpg)
 
 **Perspective Bot** is a **Chrome Extension** where we can search for the news we see on the internet and get more context about it. Using Machine Learning algorithms like BERT (Bidirectional Encoder Representations from Transformers) and clustering, the bot can show **different perspectives about the news** with the most hits by pulling tweets from the last one week using the Twitter API. 
 
-![Perspective Bot](http://52.246.249.29:3030/public/perspectivebot.png)
+![Perspective Bot](https://github.com/mjosephan2/Perspective-Bot/blob/master/images/perspectivebot.png)
 
 ### Problem Statement
 * Many sources people consider to be ‘news sources’or 'forums' are actually dominated by analysis and opinion pieces. It is hard for people to determine news as 'news' or 'opinions'.  
@@ -20,8 +20,7 @@ Our team built a pipeline based on the state-of-the-art BERT model with Twitter 
 * The results obtained are **grouped by country** (obtained from **Google Maps API**), and shown on a website built using **BootStrap** where the user can gather more **context and perspective** as well as do further research and reading of the same. 
 
 ### Screenshots
-![Click](http://52.246.249.29:3030/public/screen3.jpg)
-![Webpage](http://52.246.249.29:3030/public/screen4.png)
+![Click](https://github.com/mjosephan2/Perspective-Bot/blob/master/images/screen3.webp)
 
 ### Installation
 1. Download Google Chrome Extention from [here](https://github.com/slimechips/intuition/tree/master/chrome_ext).
